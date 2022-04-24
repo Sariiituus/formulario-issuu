@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Issuu</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./img/issuu_logo.jpeg" alt="logo" class="nav-logo" />
+      <ul>
+        <li>
+          <a href="">Already a user?</a>
+        </li>
+        <li>
+          <a href="#" class="link">Sign in</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container"></main>
+    <h2 class="title">Create an Issuu Account.</h2>
+    <div class="buttons">
+      <button id="google" i class="fa-brands fa-google"></i>
+        Sign in with Google
+      </button>
+      <button id="facebook" i class="fa-brands fa-facebook">
+        Continue with Facebook
+      </button>
+      <p class="line">or with email</p>
+    </div>
+    <form action="">
+      <label for="">Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="e.g.john.doe@email.com"
+        name="user_email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+        class="form__input"/>
+
+      <label for="">Password</label>
+      <input
+        type="password"
+        id="pwd"
+        name="user_password"
+        pattern="[A-Za-z0-9]{6,20}"
+        required
+        class="form__input"/>
+
+      <div class="checkbox-container">
+        <label for="terms" class="form__label">
+        I accept the <a href="#">Therms of Service</a> and the
+        <a href="#">Profesional Terms of Service.</a></label>
+        <input
+          type="checkbox"
+          id="terms"
+          name="user_terms"
+          class="form__checkbox"/>
+      </div>
+      <button type="submit" class="form__btn form__btn--submit">
+        Create Account
+      </button>
+    </form>
+  </body>
+</html>
